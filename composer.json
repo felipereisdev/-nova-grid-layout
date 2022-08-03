@@ -1,0 +1,29 @@
+{
+    "name": "freis/nova-grid-layout",
+    "description": "Tool responsible for allowing changing the sizes of fields",
+    "keywords": [
+        "laravel",
+        "nova"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": "^7.3|^8.0|^8.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Freis\\NovaGridLayout\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Freis\\NovaGridLayout\\ToolServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
