@@ -1,11 +1,17 @@
 {
     "name": "freis/nova-grid-layout",
-    "description": "Tool responsible for allowing changing the sizes of fields",
+    "description": "Tool responsible for allowing changing the sizes of fields. Inpired by codenco-dev/nova-grid-system",
     "keywords": [
         "laravel",
         "nova"
     ],
     "license": "MIT",
+    "authors": [
+        {
+            "name": "Felipe Reis",
+            "email": "contacto.felipereis@email.com"
+        }
+    ],
     "require": {
         "php": "^8.0|^8.1"
     },
