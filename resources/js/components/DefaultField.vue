@@ -58,25 +58,9 @@ export default {
 
   mounted() {
     if(this.hasSize) {
-      if (this.$parent.$el.classList.contains('fields-tab')) {
-        this.$parent.$el.classList.add('flex-dom')
-        this.$parent.$el.classList.add('flex-wrap')
-        this.$parent.$el.classList.add('flex')
-      } else {
-        this.$parent.$parent.$el.classList.add('flex-dom')
-        this.$parent.$parent.$el.classList.add('flex-wrap')
-        this.$parent.$parent.$el.classList.add('flex')
-      }
-
-      // Use for eminiarts/nova-tabs package
-      if(document.getElementsByClassName('relationship-tabs-panel')){
-        var tabs = document.getElementsByClassName('relationship-tabs-panel')
-        for(var i = 0; i < tabs.length; i++) {
-          tabs.item(i).className += " w-full"
-        }
-        this.$parent.$el.parentElement.classList.add('flex')
-        this.$parent.$el.parentElement.classList.add('flex-wrap')
-      }
+      this.$el.parentElement.classList.add('flex-dom')
+      this.$el.parentElement.classList.add('flex-wrap')
+      this.$el.parentElement.classList.add('flex')
     }
   },
 
