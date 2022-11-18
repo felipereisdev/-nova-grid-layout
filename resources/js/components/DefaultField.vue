@@ -1,6 +1,6 @@
 <template>
-  <div :class="elementSize">
-    <field-wrapper :stacked="field.stacked" v-if="field.visible">
+  <div :class="elementSize" v-if="field.visible">
+    <field-wrapper :stacked="field.stacked">
       <div
         class="px-6 md:px-8 mt-2 md:mt-0"
         :class="field.stacked ? 'md:pt-2 w-full' : 'w-full md:w-1/5 md:py-5'"
